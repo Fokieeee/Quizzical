@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  border: 0;
+  font-family: "Karla";
+  font-style: normal;
+  z-index: 10;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  vertical-align: baseline;
+  background-color: #b3c7ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.App {
+  position: relative;
+}
+.backgroundPictures {
+  position: absolute;
+  z-index: 1;
+}
+.leftCornerPic {
+  position: fixed;
+  top: 0;
+  left: calc(100% - 200px);
+}
+
+.rightCornerPic {
+  position: fixed;
+  top: calc(100% - 200px);
+  left: 0;
+}
+
+.start {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid; */
+  gap: 20px;
+  z-index: 15;
+}
+
+.startTitle {
+  /* border: 1px solid; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  font-size: 31.25px;
+  line-height: 37px;
+  color: #293264;
+}
+
+.startDescription {
+  /* border: 1px solid; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #293264;
+}
+
+.startButton {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 193px;
+  height: 52px;
+  background: #4d5b9e;
+  box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #f5f7fb;
+  cursor: pointer;
+}
+
+.startButton:hover {
+  background: #495592;
+}
+
+.startButton:focus {
+  outline: none;
+}
+
+.startButton:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.3);
+}
+
+.test {
+  z-index: 20;
+}
+.test-question {
+  max-width: 500px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19px;
+  color: #293264;
+}
+.test-AnswerContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* border: 2px solid; */
+  grid-auto-flow: dense;
+}
+.test-answer-correct {
+  margin: 15px;
+  min-width: 60px;
+  width: fit-content;
+  height: 20.65px;
+  padding: 0 10px;
+  border: 0.794239px solid #4d5b9e;
+  border-radius: 7.94239px;
+  background-color: #b3c7ef;
+  font-size: 11.24px;
+  line-height: 12px;
+  color: #293264;
+  cursor: pointer;
+}
+.test-answer-correct-pressed {
+  margin: 15px;
+  min-width: 60px;
+  width: fit-content;
+  height: 20.65px;
+  padding: 0 10px;
+  border: 0.794239px solid #4d5b9e;
+  border-radius: 7.94239px;
+  background-color: #b3c7ef;
+  font-size: 11.24px;
+  line-height: 12px;
+  color: #293264;
+  cursor: pointer;
+}
+
+.test-answer-incorrect {
+  margin: 15px;
+  min-width: 60px;
+  width: fit-content;
+  height: 20.65px;
+  padding: 0 10px;
+  border: 0.75px solid #4d5b9e;
+  border-radius: 7.94239px;
+  font-size: 11.24px;
+  line-height: 12px;
+  color: #293264;
+  cursor: pointer;
+}
+
+.test-answer-incorrect-pressed {
+  margin: 15px;
+  min-width: 60px;
+  width: fit-content;
+  height: 20.65px;
+  padding: 0 10px;
+  border: 0.75px solid #4d5b9e;
+  border-radius: 7.94239px;
+  background-color: #b3c7ef;
+  font-size: 11.24px;
+  line-height: 12px;
+  color: #293264;
+  cursor: pointer;
+}
+
+.check {
+  display: flex;
+  justify-content: center;
+  z-index: 22;
+}
+
+.check-button {
+  width: 120px;
+  height: 35px;
+  background: #4d5b9e;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 13.24px;
+  line-height: 12px;
+  text-align: center;
+  cursor: pointer;
+  color: #f5f7fb;
+}
+
+.check-button:hover {
+  background: #495592;
+}
+
+.check-button:focus {
+  outline: none;
+}
+
+.check-button:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.3);
+}
+
+.score {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 23;
+}
+
+.score-button {
+  width: 104px;
+  height: 30px;
+  background: #4d5b9e;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 13.24px;
+  line-height: 12px;
+  text-align: center;
+  color: #f5f7fb;
+  cursor: pointer;
+}
+
+.score-button:hover {
+  background: #495592;
+}
+
+.score-button:focus {
+  outline: none;
+}
+
+.score-button:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.3);
+}
+
+.score-result {
+  font-weight: 700;
+  font-size: 18.8px;
+  line-height: 15px;
+  text-align: center;
+  color: #293264;
+}
+
+hr {
+  width: 100%;
+  height: 0px;
+  background-color: #293264;
+  border: 0.5px solid #6a72a5;
+  margin: 0 0 15px 0;
+  z-index: 20;
+}
